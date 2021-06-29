@@ -6,7 +6,7 @@ const { products } = require('../data/Products')
 app.use(express.json());
 
 app.get('/products', (req, res) => {
-    res.json(products('abaixo'));
+    res.json(products(req.query["type"]));
 });
 
 app.listen(port, () => {
