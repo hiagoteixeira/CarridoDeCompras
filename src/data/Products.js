@@ -1,13 +1,10 @@
-import jquery, { data } from 'jquery'
+import fs from 'fs'
 
-export function getProducts(params) {
-    const items
-    $.getJSON(`/src/provider/${params}-10-reais.json`, function (data) {
-        data.items.forEach(item => {
-            const row = { "img": item.imageUrl, "name": item.name, "price": item.price };
-            items.push(row);
-        });
+export function products(params) {
+    const contents = fs.readFileSync(`../provider/${params}-10-reais.json`);
+    const data = JSON.parse(contents);
+    const items = data.items.map(function (item) {
+        return { imageUrl, name, price } = item;
     })
-
-    return items;
+    return { items, value: data.value };
 }
