@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import List from '../list/index'
+import List from '../List/index'
 import './style.css'
 import { getProducts } from '../../services/ProductsService'
 
