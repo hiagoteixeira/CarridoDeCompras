@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../css/App.css';
-import Products from '../components/Products';
+import Products from '../components/Products/index';
 
 function App() {
 
