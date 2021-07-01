@@ -28,7 +28,7 @@ export default function Products() {
                                         <span class='result-price'>R$ {products.value / 100}</span>
                                     </h5>
                                     <div class='message-container'>
-                                        {(products.value) > 10 && (
+                                        {(products.value / 100) > 10 && (
                                             <span class='message'>Parabéns, sua compra tem frete grátis !</span>
                                         )}
                                     </div>

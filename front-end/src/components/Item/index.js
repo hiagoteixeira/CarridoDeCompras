@@ -6,9 +6,9 @@ export default function Item(props) {
     return (
         <li class="item">
             <img class="img" src={props.imageUrl}></img>
-            <div>
+            <div class="item-description">
                 <h4 class="item-name">{props.name}</h4>
-                <h6>R$ {price}</h6>
+                <span class="item-price">R$ {price}</span>
             </div>
         </li>
     )
