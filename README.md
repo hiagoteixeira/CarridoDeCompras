@@ -1,9 +1,9 @@
-#Executar teste
-#Back-end Teste
+# Executar teste
+# Back-end Teste
 
 Acesse a pasta back-end e rode o comando `npm run dev`.
 
-#Front-end
+# Front-end
 
 Acesse a pasta fronte-end.
 Abra o arquivo `src/components/Products/index.js`.
