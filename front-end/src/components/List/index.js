@@ -6,7 +6,7 @@ export default function List(props) {
     return (
         <ul class='list'>
             {props.data.map(item => (
-                <Item name={item.name} imageUrl={item.imageUrl} price={item.price}></Item>
+                <Item name={item.name} imageUrl={item.imageUrl} sellingPrice={item.sellingPrice} id={item.id}></Item>
             ))}
         </ul>
     )

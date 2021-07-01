@@ -6,6 +6,7 @@ import { getProducts } from '../../services/ProductsService'
 export default function Products() {
     const [products, setProducts] = useState(null);
     useEffect(() => {
+        // Informe abaixo se o preço será acima ou abaixo de 10 reias.
         getProducts('acima').then(data => {
             setProducts(data);
         }).catch();
